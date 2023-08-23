@@ -12,12 +12,11 @@ const persistConfig = {
     storage: AsyncStorage,
     whitelist: ['basketList','favoriteList'],
     blacklist: [],
-    // migrate,
+   
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 let store: any;
-//CONFIGURE REACTOTRON
 
 store = configureStore({
   reducer: persistedReducer,

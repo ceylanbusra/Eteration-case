@@ -1,7 +1,6 @@
 interface FavoriteItem {
   id: number;
   name: string;
-  // Diğer özellikler...
   isFavorite: boolean;
 }
 
