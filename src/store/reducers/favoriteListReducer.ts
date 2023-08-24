@@ -17,7 +17,8 @@ const FavoriteListReducer = (
   action: { type: string; payload: FavoriteItem }
 ) => {
   switch (action.type) {
-    case "ADD_FAVORITE":
+
+    case "ADD_FAVORITE": //favroi listesine eklenen itemı setleyen func.
       const isAlreadyAdded = state.favList.some(
         (item) => item.id === action.payload.id
       );
@@ -35,7 +36,7 @@ const FavoriteListReducer = (
         favList: [...state.favList, newFavorite],
       };
 
-    case "REMOVE_FAVORITE":
+    case "REMOVE_FAVORITE": //favrori listesinden itemı silen func.
       return {
         favList: state.favList.map((item) => {
           if (item.id === action.payload.id) {

@@ -66,8 +66,7 @@ const HomePage = () => {
             placeholder="Search"
             style={styles.textInputStyle}
             onSubmitEditing={() => {
-              // Bu işlev klavyenin kapanmasını engeller
-              // İsteğe bağlı olarak başka bir işlev de burada çalıştırılabilir
+             null
             }}
           />
           <View style={styles.filtersWrapper}>

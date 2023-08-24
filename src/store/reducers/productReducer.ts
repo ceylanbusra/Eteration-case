@@ -10,7 +10,8 @@ const initialState: AuthState = {
 
 const productReducer = (state: AuthState = initialState, action: any) => {
   switch (action.type) {
-    case "GET_PRODUCT_SUCCESS":
+
+    case "GET_PRODUCT_SUCCESS": //Apiden dönen cevaba göre success ise responsu product stateine atayan func.
       return {
         ...state,
         product: action.payload.map((item: any) => ({
